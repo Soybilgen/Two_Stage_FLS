@@ -41,7 +41,6 @@ indx.all=unique(indx.all)
 Z.all=Z[,indx.all]
 
 # Second stage Kalman
-
 Yn=matrix(y[13:T],nrow=(T-12))
 Yn.lag1=matrix(y[12:(T-1)],nrow=(T-12))
 Xn=cbind(Yn.lag1,fitted.ls)
